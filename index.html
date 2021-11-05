@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nusantara</title>
+	<link rel="stylesheet" href="app/vendor/font-awesome/css/font-awesome.min.css" />
+	<style>
+		a{text-decoration: none;}
+		@font-face{font-family:'Raleway';font-style:normal;font-weight:400;src:url('font/raleway.ttf') format('truetype');font-display: swap;}
+		body{padding: 0;margin: 0;height: 100%;font-family: 'Raleway', sans-serif;font-size: 20px;line-height: 30px;}
+		h1,h2,h3,h4,h5{padding: 0;margin: 0}
+		.icon_menu{position: relative;}
+		.icon_menu img{width:100%;}
+		.home_menu img{margin-top: -40px;}
+		.menu_bottom{
+			background: #fff;
+			border-top: 1px solid #eee;
+			box-shadow: 0px 0px 5px gray;
+			position: fixed;
+			width: 100%;
+			bottom: 0;}
+		.wrap-notif,.wrapper,.wrap-card{
+			display: flex;
+		}
+		.border-top{
+		}
+		.wrapper > div {
+			font-size: 4vh;
+			margin: .1em;
+			padding: .3em .3em .0em .3em;
+			border-radius: 3px;
+			flex: 1;
+		}
+		.wrap-card{flex-wrap: wrap;padding: 0 5px 0px 0px}
+		.card {
+			flex: 50%;
+			/*font-size: 16px;*/
+			/*font-size: 4vh;
+			border-radius: 3px;*/
+		}
+		.card-konten{
+			border: 1px solid #eee;
+			padding: .3em .3em .3em .3em;
+
+		}
+		.card-item{
+			padding: 0 0 0 5px;
+			margin-top: 5px;
+			position: relative;
+
+			/*margin: .1em;*/
+
+		}
+		img{}
+		.header-merchant{position: relative;font-size: 18px;}
+		.konten-merchant{position: absolute;top:0;left: 0;width: 100%;color: #fff;}
+		.image-merchant{background: #000;}
+		.image-merchant img{width: 100%;opacity: 0.3;display: block;}
+		.nama-brand{border: 1px solid #fff;display: inline-block;}
+		.text{position: absolute;top: 0;left: 0;color: #fff;width: 100%;text-align: center;}
+		.konten{padding-top: 20%}
+
+		.card img{width: 100%;display: block;margin: 0;padding: 0;}
+		#root{padding-bottom:100px;}
+		.p-3{padding: 15px;}
+		#full-putih{background: #fff;height: 100%;width: 100%;position: absolute;top: 0;text-align: center;}
+		#full-putih img{width: 80%;margin-top: 40%;}
+		.mb-3{margin-bottom: 15px;}
+		.mt-3{margin-top: 15px;}
+		.uppercase{text-transform: uppercase;}
+		.produk-merchant-wrap{padding: 15px;}
+		.produk-merchant{border: 1px solid #eee;}
+		.produk-merchant-item img{
+			width: 100%;display: block;
+		}
+		.produk-merchant-item {
+		  display: flex;
+		  font-size: 16px;
+		  line-height: 16px;
+		  align-items:center;
+		  justify-content:space-between;
+		}
+		.produk-merchant-item h3{
+			font-size: 18px;
+		}
+		.produk-merchant-item .image-item {
+		  flex: 4;
+		}
+		.produk-merchant-item .konten-item {
+		  flex: 8;
+		}
+		.harga-coret{ text-decoration: line-through;}
+		.tombol-produk{padding: 3px 7px;background: green;color: white;border-radius: 10px;font-size: 14px;}
+		.header-detail-produk{position: relative;}
+		.header-detail-produk img{width: 100%}
+		.kembali-detail-produk{position: absolute;top: 0;left: 0;color: white}
+		.wrap-konten-detail-produk{margin-top: -75px;z-index: 1;position: relative;}
+		.konten-detail-produk{background: #fff;border-radius: 30px 30px 0px 0px; display: block;}
+		.tombol-pesan-detail-produk{
+			z-index: 2;
+			position: fixed;
+			padding: 15px 0;
+			background: green;
+			color: white;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+		}
+		.sort-produk-merchant{display: none;}
+		.wrap-notif{
+			border-bottom: 1px dashed #eee;
+		  align-items:center;
+		  justify-content:space-between;}
+		.image-notif {flex: 2;}
+		.title-notif {flex: 10;font-size: 16px; line-height: 16px;}
+		.image-notif img{width: 100%;border-radius: 50%}
+		#load img{width: 3%;}
+		.text-center{text-align: center;}
+		.text-right{text-align: right;}
+		.text-orange{color: orange}
+		.text-green{color: green}
+		.text-grey{color: grey}
+		.text-red{color: red}
+		.text-purple{color: purple}
+		.text-small{font-size: 12px;}
+		.p-2{padding: 10px}
+		.pb-2{padding-bottom: 10px;}
+		.pl-3{padding-left: 15px;}
+		.mt-1{margin-top: 5px}
+		.mb-1{margin-bottom: 5px}
+		.notif-detail-header{position: relative;}
+		.notif-detail-header img{display: block;width: 100%;}
+		.notif-detail-profil{margin-top: -70px;z-index: 1;position: relative;}
+		.notif-detail-profil img{width: 30%;display: block;border: 3px solid #eee;margin: 0 auto;}
+		.bd-1-grey{border: 1px solid #eee;}
+	</style>
+</head>
+<body>
+	<div id="load"></div>
+	<div id="root"></div>
+	<!-- <div id="splash"><div id="full-putih">
+	</div></div> -->
+	<!-- <script type="text/javascript" src="app/vendor/qrcode/qrcode.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+	<script src="app/sistem/_variabel_global.js"></script>
+	<script src="app/helper/saveHistory.js"></script>
+	<script src="app/helper/convertWaktu.js"></script>
+	<script src="app/helper/back.js"></script>
+	<script src="app/helper/render.js"></script>
+	<script src="app/helper/generateBlobSVG.js"></script>
+	<script src="app/helper/getRupiah.js"></script>
+
+	<script src="img/icon-diskon.js"></script>
+	<script src="img/icon-diskon-hover.js"></script>
+	<script src="img/icon-produk.js"></script>
+	<script src="img/icon-produk-hover.js"></script>
+	<script src="img/icon-home.js"></script>
+	<script src="img/icon-home-hover.js"></script>
+	<script src="img/icon-notif.js"></script>
+	<script src="img/icon-notif-hover.js"></script>
+	<script src="img/icon-user.js"></script>
+	<script src="img/icon-user-hover.js"></script>
+
+	<script src="app/data/init.js"></script>
+	<script src="app/data/image.js"></script>
+	<script src="app/data/menu.js"></script>
+	<script src="app/data/brodin.js"></script>
+	<script src="app/data/koplak.js"></script>
+	<script src="app/data/pelanggan.js"></script>
+	<script src="app/data/yuton.js"></script>
+	<script src="app/data/notif.js"></script>
+	
+	<script src="app/component/menu.js"></script>
+	<script src="app/component/cardHome.js"></script>
+	<script src="app/component/listProduk.js"></script>
+	<script src="app/component/listNotif.js"></script>
+	<script src="app/lib/Model_ofson.js"></script>
+	
+
+	<script src="app/page/screen.js"></script>
+	<script src="app/page/screenMerchant.js"></script>
+	<script src="app/page/screenDetailProduk.js"></script>
+	<script src="app/page/screenDetailNotif.js"></script>
+
+	<script>
+		DATA.MERCHANT = {};
+		DATA.PRODUK = [];
+		DATA.NOTIF = [];
+		var fake = async function (callback){
+			DATA.NOTIF = sortByDateDesc(db_notif)
+			callback({data:
+				[
+					{db:"db_koplak",slug:"koplak"},
+					{db:"db_brodin",slug:"brodin"},
+					{db:"db_yuton",slug:"yuton"}
+				]
+			});
+		};
+
+		async function urlToBlob(elem) {
+			var blob = new Blob([elem], {
+				"type": "text/html"
+			});
+			var reader = new FileReader();
+			reader.onload = function (evt) {
+				if (evt.target.readyState === 2) {
+					return evt.target.result;
+				};
+			};
+			reader.readAsDataURL(blob)
+		}
+
+
+		function sortByDateDesc(arr) {
+			var sorted = arr.sort(function(date1,date2){
+				let d1 = new Date(date1.date);
+				let d2 = new Date(date2.date);
+				return d2.getTime() - d1.getTime();
+			});
+			return sorted;
+		}
+		fake(function(res){
+			for (var i = 0; i < res.data.length; i++) {
+				let data_db = eval(res.data[i].db);
+				// data_db.slug =
+				data_db.produk.map(function(x) { 
+					x.merchant = data_db.slug; 
+					x.blob_image = "";
+					return x;
+				});
+				DATA.MERCHANT[data_db.slug] = data_db;
+				newArray = [...DATA.PRODUK, ...data_db.produk];
+				DATA.PRODUK = newArray;
+			}
+			screen({
+				dataset : {
+					data : 1
+				}
+			});
+			document.getElementById("load").innerHTML = "";
+			// console.log(DATA.NOTIF)
+		});
+	</script>
+</body>
+</html>

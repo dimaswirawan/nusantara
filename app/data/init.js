@@ -1,0 +1,2 @@
+var DATA = {};
+var HISTORY = []
