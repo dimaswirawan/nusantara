@@ -24,9 +24,7 @@ function screen(res) {
 	}else if (id == 4) {
 		konten += listNotif({data:DATA.NOTIF});
 	}else if (id == 5) {
-		var qrcode = new QRCode();
-		var e = qrcode.makeCode(Date.now());
-		console.log(e)
+		konten += `Biodata + QRCode`;
 
 	}
 	konten += menuBottom(id);
