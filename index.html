@@ -246,28 +246,31 @@
 			});
 			return sorted;
 		}
-		fake(function(res){
-			for (var i = 0; i < res.data.length; i++) {
-				let data_db = eval(res.data[i].db);
-				data_db.produk.map(function(x) { 
-					x.merchant = data_db.slug; 
-					x.blob_image = "";
-					return x;
-				});
-				DATA.MERCHANT[data_db.slug] = data_db;
-				newArray = [...DATA.PRODUK, ...data_db.produk];
-				DATA.PRODUK = newArray;
-			}
-			setTimeout(function () {
-				screen({
-					dataset : {
-						data : 1
-					}
-				});
-				document.getElementById("load").innerHTML = "";
-				document.getElementById("splash").innerHTML = "";
-			},500);
-		});
+		(() =>{
+			
+			fake(function(res){
+				for (var i = 0; i < res.data.length; i++) {
+					let data_db = eval(res.data[i].db);
+					data_db.produk.map(function(x) { 
+						x.merchant = data_db.slug; 
+						x.blob_image = "";
+						return x;
+					});
+					DATA.MERCHANT[data_db.slug] = data_db;
+					newArray = [...DATA.PRODUK, ...data_db.produk];
+					DATA.PRODUK = newArray;
+				}
+				setTimeout(function () {
+					screen({
+						dataset : {
+							data : 1
+						}
+					});
+					document.getElementById("load").innerHTML = "";
+					document.getElementById("splash").innerHTML = "";
+				},500);
+			});
+		})()
 	</script>
 </body>
 </html>
