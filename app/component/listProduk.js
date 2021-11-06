@@ -6,11 +6,7 @@ function listProduk(res) {
 			<span>Sort</span>
 		</div>
 		<div class="produk-merchant-wrap">`;
-	let jawaban = false;
-	let warna = 0;
-	let count_jawaban = 0;
-	let data_jawaban = [];
-
+	let data_image = [];
 	for (var i = 0; i < produk.length; i++) {
 		let merchant = "";
 		if (res.list) {
@@ -22,11 +18,12 @@ function listProduk(res) {
 		}else{
 			harga = `<div class="text-green mb-1">Rp. ${HELPER.getRupiah(produk[i].promo)},- <small class="harga-coret text-grey">Rp. ${HELPER.getRupiah(produk[i].harga)}</small></div>`;
 		}
+		data_image.push({url:produk[i].foto,id:`img-${produk[i].merchant}-${produk[i].id}`})
 		result += `
 			<div class="produk-merchant mb-3" onclick="screenDetailProduk({merchant:'${produk[i].merchant}',produk:'${produk[i].id}'})">
 				<div class="produk-merchant-item">
-					<div class="image-item">
-						<img src="${produk[i].foto}" alt="" />
+					<div class="image-item" id="img-${produk[i].merchant}-${produk[i].id}">
+						<img src="${image_square_blob}" alt="" />
 					</div>
 					<div class="konten-item">
 						<div class="p-2">
@@ -40,5 +37,6 @@ function listProduk(res) {
 		`;
 	}
 	result += "</div>";
+	loadImage(data_image);
 	return result;
 }

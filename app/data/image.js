@@ -8,6 +8,8 @@ var icon_notif_blob = generateBlobSVG("icon_notif()");
 var icon_notif_hover_blob = generateBlobSVG("icon_notif_hover()");
 var icon_user_blob = generateBlobSVG("icon_user()");
 var icon_user_hover_blob = generateBlobSVG("icon_user_hover()");
+var image_square_blob = generateBlobSVG("image_square()");
+var image_rectangle_blob = generateBlobSVG("image_rectangle()");
 
 var image_load = [
 	"icon_user_hover_blob",
@@ -19,6 +21,8 @@ var image_load = [
 	"icon_home_hover_blob",
 	"icon_home_blob",
 	"icon_diskon_hover_blob",
+	"image_rectangle_blob",
+	"image_square_blob",
 	"icon_diskon_blob"
 ];
 var for_load = "";

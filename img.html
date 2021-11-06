@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.tes{
+			height: 50px;
+			width: 50px;
+			background: grey;
+		}
+		img{width: 50%}
+	</style>
+</head>
+<body>
+	<div id="gambar"><div class="tes"></div></div>
+	<script>
+		preLoadImage({url:'https://image.freepik.com/free-photo/bakso-malang-komplit-meatball-soup-with-various-side-dish-like-noodle-fried-shiumay-ribs-served-table-bakso-iga_511235-2493.jpg',id:"gambar"})
+		function preLoadImage(res){
+			var img = new Image();
+			var imgUrl = res.url;
+			img.onload = function(){
+				document.getElementById(res.id).innerHTML = `<img src="${imgUrl}" alt="" />`;
+			}
+			img.src = imgUrl;
+		}
+	</script>
+</body>
+</html>

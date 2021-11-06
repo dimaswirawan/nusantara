@@ -37,3 +37,42 @@ var db_yuton = {
 		}
 	]
 };
+// var db_yuton = {
+// 	slug: "yuton",
+// 	brand : {
+// 			nama: "Yu Ton",
+// 			alamat : "Jl. AR Saleh",
+// 			deskripsi : "Bakso Enak",
+// 			logo : "dumy/logo-yuton.webp",
+// 			foto : "dumy/foto-yuton.webp",
+// 			},
+// 	produk : [
+// 		{
+// 			id: "1",
+// 			nama: "Pahe 1",
+// 			deskripsi:"<h4>Deskripsi</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugit autem quibusdam eius maiores ut quo voluptatem consequatur cumque, excepturi obcaecati laudantium neque consectetur dolores atque commodi praesentium, voluptatum aliquam.",
+// 			date:"Wed Nov 03 2021 10:13:51 GMT+0700 (Western Indonesia Time)",
+// 			foto : "dumy/yuton-1.webp",
+// 			harga : "12000",
+// 			promo: "12000"
+// 		},
+// 		{
+// 			id: "2",
+// 			date:"Wed Nov 03 2021 12:11:51 GMT+0700 (Western Indonesia Time)",
+// 			nama: "Pahe 2",
+// 			deskripsi:"<h4>Deskripsi</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugit autem quibusdam eius maiores ut quo voluptatem consequatur cumque, excepturi obcaecati laudantium neque consectetur dolores atque commodi praesentium, voluptatum aliquam.",
+// 			foto : "dumy/yuton-2.webp",
+// 			harga : "15000",
+// 			promo: "12000"
+// 		},
+// 		{
+// 			id: "3",
+// 			date:"Wed Nov 03 2021 18:11:51 GMT+0700 (Western Indonesia Time)",
+// 			nama: "Pahe 3",
+// 			deskripsi:"<h4>Deskripsi</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugit autem quibusdam eius maiores ut quo voluptatem consequatur cumque, excepturi obcaecati laudantium neque consectetur dolores atque commodi praesentium, voluptatum aliquam.",
+// 			foto : "dumy/yuton-3.webp",
+// 			harga : "18000",
+// 			promo: "15000"
+// 		}
+// 	]
+// };

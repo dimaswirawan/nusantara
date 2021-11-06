@@ -37,3 +37,42 @@ var db_brodin = {
 		}
 	]
 };
+// var db_brodin = {
+// 	slug : "brodin",
+// 	brand : {
+// 			nama: "Pak Brodin",
+// 			alamat : "Jl. Merdeka",
+// 			deskripsi : "Warung Sate Gaul",
+// 			logo : "dumy/logo-brodin.webp",
+// 			foto: "dumy/foto-brodin.jpg"
+// 	},
+// 	produk : [
+// 		{
+// 			id: "1",
+// 			date:"Wed Nov 02 2021 10:11:51 GMT+0700 (Western Indonesia Time)",
+// 			nama: "Sate Hati Ayam",
+// 			deskripsi:"<h4>Deskripsi</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugit autem quibusdam eius maiores ut quo voluptatem consequatur cumque, excepturi obcaecati laudantium neque consectetur dolores atque commodi praesentium, voluptatum aliquam.",
+// 			foto : "dumy/brodin-1.webp",
+// 			harga : "18000",
+// 			promo: "15000"
+// 		},
+// 		{
+// 			id: "2",
+// 			date:"Wed Nov 03 2021 11:11:51 GMT+0700 (Western Indonesia Time)",
+// 			nama: "Sate Daging Ayam",
+// 			deskripsi:"<h4>Deskripsi</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugit autem quibusdam eius maiores ut quo voluptatem consequatur cumque, excepturi obcaecati laudantium neque consectetur dolores atque commodi praesentium, voluptatum aliquam.",
+// 			foto : "dumy/brodin-2.webp",
+// 			harga : "18000",
+// 			promo: "18000"
+// 		},
+// 		{
+// 			id: "3",
+// 			date:"Wed Nov 03 2021 20:11:51 GMT+0700 (Western Indonesia Time)",
+// 			nama: "Paket Hemat",
+// 			deskripsi:"<h4>Deskripsi</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo fugit autem quibusdam eius maiores ut quo voluptatem consequatur cumque, excepturi obcaecati laudantium neque consectetur dolores atque commodi praesentium, voluptatum aliquam.",
+// 			foto : "dumy/brodin-3.webp",
+// 			harga : "15000",
+// 			promo: "12000"
+// 		}
+// 	]
+// };
