@@ -15,7 +15,7 @@ function detailProduk(res) {
 	if (res.harga <= res.promo) {
 		harga = `<div class="text-green mb-3">Rp. ${HELPER.getRupiah(res.harga)},-</div>`;
 	}else{
-		harga = `<div class="text-green mb-3">Rp. ${HELPER.getRupiah(res.promo)},- <small class="harga-coret">Rp. ${HELPER.getRupiah(res.harga)}</small></div>`;
+		harga = `<div class="text-green mb-3">Rp. ${HELPER.getRupiah(res.promo)},- <small class="harga-coret text-grey">Rp. ${HELPER.getRupiah(res.harga)}</small></div>`;
 	}
 
 	let result = `
