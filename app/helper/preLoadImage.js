@@ -1,5 +1,5 @@
 HELPER.preLoadImage = function (res){
-	console.log(res)
+	// console.log(res)
 	var img = new Image();
 	var imgUrl = res.url;
 	img.onload = function(){
@@ -9,7 +9,7 @@ HELPER.preLoadImage = function (res){
 }
 function loadImage(res) {
 	setTimeout(function () {
-		console.log(res)
+		// console.log(res)
 		for (var i = 0; i < res.length; i++) {
 			HELPER.preLoadImage({url:res[i].url,id:res[i].id})
 		}
