@@ -20,7 +20,9 @@ function detailProduk(res) {
 
 	let result = `
 		<div class="header-detail-produk">
-			<img src="${res.foto}" />
+			<div id="foto">
+			<img src="${image_square_blob}" />
+			</div>
 
 			<div class="kembali-detail-produk">
 				<div class="p-3">
@@ -42,6 +44,7 @@ function detailProduk(res) {
 		</div>
 	`;
 
+	loadImage([{url:res.foto,id:"foto"}])
 	// console.log()
 	return result;
 }
