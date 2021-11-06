@@ -24,7 +24,7 @@ var db_koplak = {
 			deskripsi:"<h4>Deskripsi</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate voluptates laborum incidunt veritatis nobis, consequatur quos necessitatibus nemo dolores? Dolorum nisi sed eveniet maxime ullam labore corrupti quia numquam voluptatem.",
 			foto : "https://image.freepik.com/free-photo/top-view-fried-chicken-with-variety-three-sauces_23-2148646572.jpg",
 			harga : "19000",
-			promo: "14000"
+			promo: "19000"
 		},
 		{
 			id: "3",
